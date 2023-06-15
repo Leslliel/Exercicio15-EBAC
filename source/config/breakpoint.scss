@@ -1,0 +1,22 @@
+@use 'variaveis';
+
+@media screen and (max-width: variaveis.$tablet) {
+    .container {
+        max-width: 80%;
+    }
+
+    .produtos {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
+@media screen and (max-width: variaveis.$mobile) {
+    .produtos {
+        display: block;
+
+        .item-produto {
+            margin-bottom: 32px;
+        }
+    }
+}
